@@ -192,7 +192,7 @@ export class App {
   }
 
   public async serve() {
-    const hostname = "0.0.0.0";
+    const hostname = "::";
     const listener = listen({ hostname, port: this.port });
     console.log(`listening on http://${hostname}:${this.port}/`);
     this.server = new Server(listener);
